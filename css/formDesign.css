@@ -17,11 +17,7 @@ input{
     width: 17em;
 }
 
-/*span.resizeable > input {*/
-/*    width: 100%;*/
-/*    box-sizing: border-box;*/
-/*    margin: 0;*/
-/*}*/
+
 
 
 input:invalid, textarea:invalid{

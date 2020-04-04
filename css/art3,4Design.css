@@ -1,13 +1,20 @@
 html{
+    margin: 1rem;
+    font-family: "Arial", sans-serif;
     text-align: center;
-    font-size: 110%;
+    font-size: 1.2rem;
     color: midnightblue;
 }
 
+
 body{
+    background-color: thistle;
     margin: 1rem;
-    font-family: sans-serif;
     line-height: 3em;
+}
+
+h4{
+    text-decoration: underline;
 }
 
 body > header > h1{
@@ -24,7 +31,7 @@ body > header > h1{
     }
 
     to {
-        margin-left: 0%;
+        margin-left: 0;
         width: 100%;
     }
 }
@@ -70,7 +77,6 @@ nav, aside{
     margin-bottom: 3%;
     border-radius: 3rem;
     outline-offset: 20px;
-    font-family: sans-serif;
     border-left-style: double;
     border-right-style: double;
     border-top-style: double;
@@ -99,7 +105,6 @@ article{
     margin-right: 7%;
     margin-top: 3%;
     margin-bottom: 3%;
-    font-size:1em;
 }
 
 
@@ -111,6 +116,7 @@ footer{
 
 
 @media only screen and (min-width: 600px){
+
 
     body{
 
@@ -186,6 +192,23 @@ footer{
     }
 
 }
+
+/*@media not all and (min-width: 600px) and (max-resolution: 1.8dppx){*/
+
+/*    body{*/
+/*        width: 100%;*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        min-width: 16rem;*/
+/*        margin: auto;*/
+/*    }*/
+
+/*    body > footer{*/
+/*        order: 1;*/
+/*    }*/
+
+/*}*/
+
 
 
 

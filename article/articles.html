@@ -21,14 +21,15 @@
         <br>Kvety sú každodennou súčasťou nášho života. Robia naše okolie krásnym a príjemným svojim vzhľadom a vôňou. Táto stránka obsahuje články z rôznych oblastí s témou kvetov, či už najnovšie trendy alebo spôsob pestovania.</i>
     </article>
 
-    <article>
+    <nav>
         <ul>
             <li><a href="article1.html" title="clanok1">Kvety používané do kytíc</a>
             <li><a href="article2.html" title="clanok2">Krása typická pre Holandsko</a>
             <li><a href="article3.html" title="clanok3">Pestovanie levandule</a>
             <li><a href="article4.html" title="clanok4">Jarné kvety</a>
+            <li><a href="animations.html" title="animations">Animacie</a>
         </ul>
-    </article>
+    </nav>
 
     <article>
         <h2>Visitor Opinions</h2>
@@ -39,7 +40,7 @@
 
 <article>
 <h4>Formular</h4>
-<form id="kvetyForm" method="get" target="frmRes" action="formResponse" ><hr>
+<form id="kvetyForm" method="get" target="frmRes" ><hr>
     <label for="nameElm">Meno: <input type="text" name="meno" id="nameElm" size="35" maxlength="30"
                         placeholder="napr. Jozef Mrkva"
                         required
@@ -188,8 +189,8 @@
 
     <script id="myTemplate" type="text/template">
     <section>
-        <h3>{{name}} <i>{{createdDate}}</i></h3>
-        <p>{{email}}}</p>
+        <h4>{{name}} </h4><i>{{createdDate}}</i>
+        <p>{{email}}</p>
         <p>{{comment}}</p>
         <p>{{url}}</p>
         <p>{{rating}}</p>

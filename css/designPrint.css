@@ -2,10 +2,19 @@ html{
     font-family: "Times New Roman", serif;
     font-size: 16pt;
     animation: none;
+    background-color: #fff;
 }
 body{
     margin: 0;
     background-color: #fff;
+}
+
+body > article >img{
+    animation: none;
+    display: none;
+    width: 10%;
+    height: auto;
+    max-width: 50%;
 }
 body > header > h1{
     font-size: 3rem;
@@ -13,26 +22,21 @@ body > header > h1{
     animation: none;
 }
 
-body > main{
-
-}
-
-
-
-
 
 nav{
     display: none;
 }
 
-article{
-    /*display: none;*/
-}
-
 img{
-    display: none;
-    animation: none;
+    max-width: 100%;
 }
+/*body > article{*/
+/*    !*display: none;*!*/
+/*    !*background-color: #fff;*!*/
+/*    background: none;*/
+/*}*/
+
+
 
 
 

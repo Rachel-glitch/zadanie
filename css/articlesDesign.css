@@ -1,12 +1,12 @@
-
-main{
+html{
     margin: 1rem;
+    font-family: "Arial", sans-serif;
+    font-size: 1.2rem;
 }
-
 
 h2{
     text-align: center;
-    font-family: "DejaVu Sans Condensed";
+
 }
 
 img{
@@ -28,7 +28,7 @@ img:hover{
 
 
 
-article{
+article,nav{
     min-height: 20%;
     line-height: 200%;
     background-color: lightpink;
