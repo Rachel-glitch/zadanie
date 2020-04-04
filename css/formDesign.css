@@ -1,0 +1,39 @@
+label{
+    vertical-align: top;
+    display: inline-block;
+    max-width: 70rem;
+    min-width: 5em;
+}
+
+
+textarea {
+    resize: none;
+}
+
+
+input{
+    display: inline-block;
+    resize: horizontal;
+    width: 17em;
+}
+
+/*span.resizeable > input {*/
+/*    width: 100%;*/
+/*    box-sizing: border-box;*/
+/*    margin: 0;*/
+/*}*/
+
+
+input:invalid, textarea:invalid{
+    border-color: red;
+}
+
+:out-of-range{
+    color: darkred;
+}
+
+input:valid{
+    color: darkgreen;
+}
+
+

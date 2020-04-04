@@ -1,0 +1,149 @@
+@keyframes colors {
+    from {
+        fill: goldenrod;
+    }
+    30% {
+        fill: darkorange;
+    }
+    60% {
+        fill: orange;
+    }
+    to {
+        fill: yellow;
+    }
+}
+
+@keyframes colors2 {
+    from {
+        fill: blueviolet ;
+    }
+    30% {
+        fill: darkorchid;
+    }
+    60% {
+        fill: mediumpurple;
+    }
+    to {
+        fill: thistle;
+    }
+}
+
+@keyframes colors3 {
+    from {
+        fill: darkred ;
+    }
+    30% {
+        fill: crimson;
+    }
+    60% {
+        fill: indianred;
+    }
+    to {
+        fill: palevioletred;
+    }
+}
+
+@keyframes colors4 {
+    from {
+        fill: fuchsia ;
+    }
+    30% {
+        fill: deeppink;
+    }
+    60% {
+        fill: hotpink;
+    }
+    to {
+        fill: pink;
+    }
+}
+
+
+
+
+
+.svgAnimation{
+    animation-name: colors;
+    animation-duration: 15s;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+    animation-iteration-count: 10;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both}
+
+.svgAnimation2{
+    animation-name: colors2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+    animation-fill-mode: both}
+
+.svgAnimation3{
+    animation-name: colors2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both}
+
+.svgAnimation4{
+    animation-name: colors3;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both
+}
+
+.svgAnimation5{
+    animation-name: colors3;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+    animation-fill-mode: both}
+
+.svgAnimation6{
+    animation-name: colors4;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both
+}
+
+.svgAnimation7{
+    animation-name: colors4;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+    animation-fill-mode: both}
+
+.flowerAnimation{
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slidein {
+    from {
+        margin-left: 70%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 30%;
+        width: 100%;
+    }
+}
+
+
+

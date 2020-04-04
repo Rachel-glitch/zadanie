@@ -1,0 +1,176 @@
+
+main{
+    margin: 1rem;
+}
+
+
+h2{
+    text-align: center;
+    font-family: "DejaVu Sans Condensed";
+}
+
+img{
+    width: 60%;
+    height: auto;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    max-width: 300%;
+
+
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+img:hover{
+    width: 75%;
+    transform: inherit;
+}
+
+
+
+
+article{
+    min-height: 20%;
+    line-height: 200%;
+    background-color: lightpink;
+    padding-bottom: 1vw;
+    padding-top: 2vw;
+    padding-left: 3vw;
+    padding-right: 4vw;
+
+    border-left-style: double;
+    border-right-style: double;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-width: 5px;
+    border-color: antiquewhite;
+    outline-offset: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 2rem;
+    font-family: sans-serif;
+}
+
+
+
+
+header, article {
+    min-height: 20%;
+    text-indent: 30px;
+    line-height: 200%;
+    background-color: blanchedalmond;
+    padding-bottom: 1vw;
+    padding-top: 2vw;
+    padding-left: 3vw;
+    padding-right: 4vw;
+    border-left-style: double;
+    border-right-style: double;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-width: 5px;
+    border-color: darkred;
+    border-radius: 2rem;
+    outline-offset: 20em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+
+}
+
+
+img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body{
+background-image: url("../obrazky/pozadie3.jpeg");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: right top
+}
+
+body > h1{
+    font-family: cursive;
+    text-align: center;
+    background-color: lightpink;
+}
+
+
+
+
+footer{
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+
+    body {
+
+        min-width: 35rem;
+        max-width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+}
+
+@media only screen and (max-width: 599px){
+
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+.menu {
+    text-align: left;
+    padding-left: 0.5em;
+}
+
+#menuIts{
+    position:absolute;
+    padding: 0.5em;
+    max-width: 8em;
+    min-width: 7em;
+    border-radius: 0.5rem;
+    background-color: rgb(204,153,0);
+}
+
+#menuIts > a {
+    display: block;
+}
+
+#menuTitle{
+    border: 0;
+    background-color: rgb(204,153,0);
+    outline:none;
+}
+
+#menuTitle:hover, #menuIts > a:hover{
+    text-decoration: none;
+    color: #982d3b;
+    background-color: rgb(255,246,214);
+}
+
+.mnHide {display:none;}
+
+.mnShow {display:block;}
+
+
+
+
+
+
+
+
+
+

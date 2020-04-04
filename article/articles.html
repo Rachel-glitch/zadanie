@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >Články</title>
+    <link rel = stylesheet href="../css/articlesDesign.css" media="screen">
+    <link rel = stylesheet href="../css/formDesign.css">
+    <link rel = stylesheet href="../css/designPrint.css" media="print">
+    <link rel="stylesheet" href="../css/animationsDesign.css">
+
+</head>
+<body >
+
+
+    <h1 >KVETY</h1>
+    <hr>
+
+    <article>
+        <i><b>„Musím mať kvety, vždy a vždy.“
+        <br>(Claude Monet francúzsky maliar 1840 - 1926)</b>
+        <br>Kvety sú každodennou súčasťou nášho života. Robia naše okolie krásnym a príjemným svojim vzhľadom a vôňou. Táto stránka obsahuje články z rôznych oblastí s témou kvetov, či už najnovšie trendy alebo spôsob pestovania.</i>
+    </article>
+
+    <article>
+        <ul>
+            <li><a href="article1.html" title="clanok1">Kvety používané do kytíc</a>
+            <li><a href="article2.html" title="clanok2">Krása typická pre Holandsko</a>
+            <li><a href="article3.html" title="clanok3">Pestovanie levandule</a>
+            <li><a href="article4.html" title="clanok4">Jarné kvety</a>
+        </ul>
+    </article>
+
+    <article>
+        <h2>Visitor Opinions</h2>
+        <div id="opinionsContainer"></div>
+        <button type="button" onclick="clearData()">Clear</button>
+    </article>
+
+
+<article>
+<h4>Formular</h4>
+<form id="kvetyForm" method="get" target="frmRes" action="formResponse" ><hr>
+    <label for="nameElm">Meno: <input type="text" name="meno" id="nameElm" size="35" maxlength="30"
+                        placeholder="napr. Jozef Mrkva"
+                        required
+                        pattern="^[aA-zZ]* [aA-zZ]*$"
+                        spellcheck="false"
+                        lang="sk"
+                        autocomplete="on"
+                        ></label><br><br>
+
+    <label for="emailElm">Email: <input type="email" name="email" id="emailElm" size="52" maxlength="50"
+                         placeholder="napr. jozef.mrkva@student.tuke.sk"
+                        required
+                        pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+                        spellcheck="false"
+                         lang="sk"
+                        autocomplete="on"> </label><br><br>
+
+    <label for="urlElm">Prispevok: <input type="url" name="prispevok"
+                                          id="urlElm" maxlength="50" placeholder="napr. https//:fei.tuke.sk"
+                                          pattern="https://.*" size="30"
+                                          required></label>
+        <br><br>
+
+    <label for="hodn1Elm">Stranku hodnotim ako: </label><br>
+    <input type="radio" id="hodn1Elm" name="hodnotenie" value="1" checked/>
+    <label for="hodn1Elm">vybornu</label><br>
+    <input type="radio" id="hodn2Elm" name="hodnotenie" value="2" checked/>
+    <label for="hodn2Elm">priemernu</label><br><br>
+
+
+    <input type="checkbox" id="interestedIn" name="interested"  />
+    <label for="interestedIn">Zaujima vas tema kvetov?</label><br>
+    <input type="checkbox" id="interestedIn2" name="interested"  />
+    <label for="interestedIn2">Zaujima vas tema pestovania?</label><br>
+    <input type="checkbox" id="interestedIn3" name="interested"  />
+    <label for="interestedIn3">Zaujima vas tema kytic a ich tvorba?</label><br><br>
+
+
+
+    <label for="myFlowers">Klucove slova, hodiace sa k tejto stranke:</label>
+    <input type="text" list="flowers" id="myFlowers" name="myFlower" />
+    <datalist id="flowers">
+        <option>Ruze</option>
+        <option>Tulipany</option>
+        <option>Starostlivost o kvety</option>
+        <option>Kytice</option>
+        <option>Jar</option>
+    </datalist><br><br>
+
+
+    <label for="opnElm">Nazor:</label>
+    <textarea name="nazor" id="opnElm" cols="5" rows="5" style="width: 90%" placeholder="Moj nazor na tuto stranku je..."></textarea><br>
+    <button type="submit" value="Send">Send</button>
+    <button type="reset" value="Reset" onclick="alert('resetoval si')">Reset</button>
+
+</form>
+</article>
+
+
+
+    <article>
+        <i><b>O autorovi:</b><br>
+        <br>Autorkou článkov je milovníčka kvetov, špeciálne tulipánov. Narodila sa v jari, keď všetko kvitne a tak nejako jej kvety a ich pestovanie prirástlo k srdcu.
+        <br>Rachel Saraková
+        <br><a href="mailto:rachel.sarakova@student.tuke.sk">Email</a>
+        </i>
+    </article>
+
+    <footer>
+        <hr>
+        <small>
+            Autor:Rachel Sarakova<br>
+            Dátum vytvorenia: 27.02.2020
+            <a href="mailto:rachel.sarakova@student.tuke.sk?Subject=Reakcia%20na%20vas%20blog%20s%20nazvom:%20Najoblubenejsie%20kvety%20pouzivane%20do%20kytic">Email</a>
+        </small>
+    </footer>
+
+<!--    <script>-->
+
+
+<!--        let opinions=[];-->
+<!--        let radio=[];-->
+
+<!--        if(localStorage.flowersComments){-->
+<!--            opinions = JSON.parse(localStorage.flowersComments);-->
+<!--        }-->
+
+<!--        console.log(opinions);-->
+
+<!--        let myFrmElm=document.getElementById("kvetyForm");-->
+<!--        myFrmElm.addEventListener("submit", processOpnFrmData);-->
+
+<!--        function processOpnFrmData(event) {-->
+<!--            event.preventDefault();-->
+
+<!--            const name = document.getElementById("nameElm").value.trim();-->
+<!--            const email = document.getElementById("emailElm").value.trim();-->
+<!--            const url = document.getElementById("urlElm").value.trim();-->
+<!--            const opn = document.getElementById("opnElm").value.trim();-->
+<!--            const theme1 = document.getElementById("interestedIn").checked;-->
+<!--            const theme2 = document.getElementById("interestedIn2").checked;-->
+<!--            const theme3 = document.getElementById("interestedIn3").checked;-->
+<!--            const rating = document.getElementById("kvetyForm").elements["hodnotenie"];-->
+
+
+<!--            if (name == "" || opn == "" || email == "") {-->
+<!--                window.alert("Please, enter your name, email and opinion");-->
+<!--                return;-->
+<!--            }-->
+
+
+<!--            const newOpinion =-->
+<!--                {-->
+<!--                    name: name,-->
+<!--                    email: email,-->
+<!--                    url: url,-->
+<!--                    comment: opn,-->
+<!--                    the1: theme1,-->
+<!--                    the2: theme2,-->
+<!--                    the3: theme3,-->
+<!--                    rating: rating,-->
+<!--                    created: new Date()-->
+<!--                };-->
+
+
+<!--            console.log("New opinion:\n "+JSON.stringify(newOpinion));-->
+
+<!--            opinions.push(newOpinion);-->
+
+<!--            localStorage.flowersComments = JSON.stringify(opinions);-->
+
+
+<!--            //4. Notify the user-->
+<!--            window.alert("Your opinion has been stored. Look to the console");-->
+<!--            console.log("New opinion added");-->
+<!--            console.log(opinions);-->
+
+<!--            //5. Reset the form-->
+<!--            myFrmElm.reset(); //resets the form-->
+<!--        }-->
+
+
+
+
+<!--    </script>-->
+
+    <script id="myTemplate" type="text/template">
+    <section>
+        <h3>{{name}} <i>{{createdDate}}</i></h3>
+        <p>{{email}}}</p>
+        <p>{{comment}}</p>
+        <p>{{url}}</p>
+        <p>{{rating}}</p>
+        <p>{{the1}}</p>
+        <p>{{the2}}</p>
+        <p>{{the3}}</p>
+        <p>{{willReturnMessage}}</p>
+    </section>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"
+    integrity="sha256-MPgtcamIpCPKRRm1ppJHkvtNBAuE71xcOM+MmQytXi8="
+    crossorigin="anonymous">
+    </script>
+    <script src="articlesJS.js"></script>
+
+
+</body>
+</html>

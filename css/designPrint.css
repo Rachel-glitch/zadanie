@@ -1,0 +1,39 @@
+html{
+    font-family: "Times New Roman", serif;
+    font-size: 16pt;
+    animation: none;
+}
+body{
+    margin: 0;
+    background-color: #fff;
+}
+body > header > h1{
+    font-size: 3rem;
+    text-align: center;
+    animation: none;
+}
+
+body > main{
+
+}
+
+
+
+
+
+nav{
+    display: none;
+}
+
+article{
+    /*display: none;*/
+}
+
+img{
+    display: none;
+    animation: none;
+}
+
+
+
+
