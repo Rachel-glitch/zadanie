@@ -25,7 +25,7 @@ img{
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 60%;
+    width: 45%;
     height: auto;
     padding-top: 5%;
     padding-left: 15%;
@@ -36,7 +36,7 @@ img{
     transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 img:hover{
-    width: 65%;
+    width: 50%;
     transform: inherit;
 }
 
@@ -50,7 +50,7 @@ header, article{
     text-indent: 30px;
     line-height: 200%;
     background-color: blanchedalmond;
-    padding: 5rem;
+    padding: 3rem;
     border-left-style: double;
     border-right-style: double;
     border-top-style: double;

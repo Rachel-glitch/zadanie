@@ -18,21 +18,21 @@ h4{
 }
 
 body > header > h1{
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-name: slidein;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 3;
     animation-direction: alternate;
     color: midnightblue;
 }
 @keyframes slidein {
     from {
-        margin-left: 100%;
-        width: 300%;
+        margin-left: 50%;
+        width: 50%;
     }
 
     to {
         margin-left: 0;
-        width: 100%;
+        width: 50%;
     }
 }
 

@@ -16,8 +16,8 @@
     <hr>
 
     <article>
-        <h4><i>„Musím mať kvety, vždy a vždy.“</i></h4>
-        <br><b>(Claude Monet francúzsky maliar 1840 - 1926)</b>
+        <h4><i>„Musím mať kvety, vždy a vždy.“
+        <br>(Claude Monet francúzsky maliar 1840 - 1926)</i></h4>
         <br>Kvety sú každodennou súčasťou nášho života. Robia naše okolie krásnym a príjemným svojim vzhľadom a vôňou. Táto stránka obsahuje články z rôznych oblastí s témou kvetov, či už najnovšie trendy alebo spôsob pestovania.
     </article>
 
@@ -118,93 +118,25 @@
         </small>
     </footer>
 
-<!--    <script>-->
-
-
-<!--        let opinions=[];-->
-<!--        let radio=[];-->
-
-<!--        if(localStorage.flowersComments){-->
-<!--            opinions = JSON.parse(localStorage.flowersComments);-->
-<!--        }-->
-
-<!--        console.log(opinions);-->
-
-<!--        let myFrmElm=document.getElementById("kvetyForm");-->
-<!--        myFrmElm.addEventListener("submit", processOpnFrmData);-->
-
-<!--        function processOpnFrmData(event) {-->
-<!--            event.preventDefault();-->
-
-<!--            const name = document.getElementById("nameElm").value.trim();-->
-<!--            const email = document.getElementById("emailElm").value.trim();-->
-<!--            const url = document.getElementById("urlElm").value.trim();-->
-<!--            const opn = document.getElementById("opnElm").value.trim();-->
-<!--            const theme1 = document.getElementById("interestedIn").checked;-->
-<!--            const theme2 = document.getElementById("interestedIn2").checked;-->
-<!--            const theme3 = document.getElementById("interestedIn3").checked;-->
-<!--            const rating = document.getElementById("kvetyForm").elements["hodnotenie"];-->
-
-
-<!--            if (name == "" || opn == "" || email == "") {-->
-<!--                window.alert("Please, enter your name, email and opinion");-->
-<!--                return;-->
-<!--            }-->
-
-
-<!--            const newOpinion =-->
-<!--                {-->
-<!--                    name: name,-->
-<!--                    email: email,-->
-<!--                    url: url,-->
-<!--                    comment: opn,-->
-<!--                    the1: theme1,-->
-<!--                    the2: theme2,-->
-<!--                    the3: theme3,-->
-<!--                    rating: rating,-->
-<!--                    created: new Date()-->
-<!--                };-->
-
-
-<!--            console.log("New opinion:\n "+JSON.stringify(newOpinion));-->
-
-<!--            opinions.push(newOpinion);-->
-
-<!--            localStorage.flowersComments = JSON.stringify(opinions);-->
-
-
-<!--            //4. Notify the user-->
-<!--            window.alert("Your opinion has been stored. Look to the console");-->
-<!--            console.log("New opinion added");-->
-<!--            console.log(opinions);-->
-
-<!--            //5. Reset the form-->
-<!--            myFrmElm.reset(); //resets the form-->
-<!--        }-->
-
-
-
-
-<!--    </script>-->
-
     <script id="myTemplate" type="text/template">
     <section>
-        <h4>{{name}} </h4><i>{{createdDate}}</i>
-        <p>{{email}}</p>
-        <p>{{comment}}</p>
-        <p>{{url}}</p>
-        <p>{{rating}}</p>
+        <h4>Meno: {{name}} </h4>
+        <p><i>Dátum: {{createdDate}}</i></p>
+        <p>Emil: {{email}}</p>
+        <p>Názor: {{comment}}</p>
+        <p>Príspevok: {{url}}</p>
+        <p>Hodnotenie: {{rating}}</p>
         <p>{{the1}}</p>
         <p>{{the2}}</p>
         <p>{{the3}}</p>
-        <p>{{willReturnMessage}}</p>
+        <br>
     </section>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"
     integrity="sha256-MPgtcamIpCPKRRm1ppJHkvtNBAuE71xcOM+MmQytXi8="
     crossorigin="anonymous">
     </script>
-    <script src="articlesJS.js"></script>
+    <script src="../js/articlesJS.js"></script>
 
 
 </body>

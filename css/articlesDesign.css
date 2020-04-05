@@ -95,7 +95,6 @@ background-image: url("../obrazky/pozadie3.jpeg");
 }
 
 body > h1{
-    font-family: cursive;
     text-align: center;
     background-color: lightpink;
 }
